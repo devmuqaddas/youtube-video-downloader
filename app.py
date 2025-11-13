@@ -1146,6 +1146,6 @@ async def shutdown_event():
     file_manager.cleanup_old_files()
     logger.info("Shutdown complete")
 
-if __name__ == '__main__':
-    import uvicorn
-    uvicorn.run("app:app", host="0.0.0.0", port=8000, reload=True, workers=1)
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    uvicorn.run(app, host="0.0.0.0", port=port)
