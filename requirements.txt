@@ -1,10 +1,8 @@
-fastapi==0.111.0
-pydantic==2.7.1
-uvicorn==0.30.1
+fastapi
+pydantic
+uvicorn
 yt-dlp
-psutil==5.9.8
-
-
-python-multipart==0.0.6
-gunicorn==21.2.0
-jinja2==3.1.2
+psutil
+python-multipart
+gunicorn
+jinja2
